@@ -83,12 +83,36 @@ section h3 {
 
 .participants ul {
   margin: 8px 0 0 20px;
+  list-style: none;
+  padding: 0;
   color: #596579;
 }
 
 .participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   padding: 2px 0;
   overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid #d9a4a4;
+  border-radius: 50%;
+  background: #fff5f5;
+  color: #b42318;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.remove-participant:hover {
+  background: #b42318;
+  color: white;
 }
 
 .participants .no-participants {
